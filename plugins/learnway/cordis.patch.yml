@@ -1,0 +1,14 @@
+# Learn Your Way bundle: one Host row owning the lesson store, the panel API and
+# the agent tools; the browser half in client.js renders the 教材改造台 page.
+- insert:
+    - id: learnway
+      name: '@local/dsh-learnway'
+      config:
+        # Where lessons are stored. Defaults to $DSH_HOME/learnway.
+        # dataDir: /absolute/path
+        # How many lessons are kept before the oldest are trimmed.
+        keepLessons: 60
+        # Acceptable absolute Flesch-Kincaid distance from the learner grade.
+        gradeTolerance: 1
+        # Seed the two demo lessons on an empty store (1 = on, 0 = off).
+        seedDemoLessons: 1

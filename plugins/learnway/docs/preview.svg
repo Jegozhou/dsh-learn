@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-label="A textbook page on the left; a personalised, highlighted rewrite, a slide, an audio conversation, a mind map and a graded quiz fan out to the right">
+  <defs>
+    <linearGradient id="lw-panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6df6" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#ffb703" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="lw-page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#eaf0ff" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="624" height="284" rx="22" fill="url(#lw-panel)" stroke="#2f6df6" stroke-opacity="0.22"/>
+
+  <!-- source of truth: the textbook page -->
+  <g>
+    <rect x="40" y="52" width="150" height="196" rx="12" fill="url(#lw-page)" stroke="#1b3fb0" stroke-opacity="0.28"/>
+    <rect x="56" y="72" width="86" height="9" rx="4.5" fill="#1b3fb0" opacity="0.55"/>
+    <rect x="56" y="94" width="118" height="6" rx="3" fill="#1b3fb0" opacity="0.28"/>
+    <rect x="56" y="110" width="112" height="6" rx="3" fill="#1b3fb0" opacity="0.28"/>
+    <rect x="56" y="126" width="118" height="6" rx="3" fill="#1b3fb0" opacity="0.28"/>
+    <rect x="56" y="142" width="92" height="6" rx="3" fill="#1b3fb0" opacity="0.28"/>
+    <!-- the sentence that will be personalised -->
+    <rect x="56" y="164" width="118" height="20" rx="5" fill="#2f6df6" opacity="0.22"/>
+    <rect x="56" y="164" width="4" height="20" rx="2" fill="#2f6df6"/>
+    <rect x="56" y="196" width="108" height="6" rx="3" fill="#1b3fb0" opacity="0.28"/>
+    <rect x="56" y="212" width="74" height="6" rx="3" fill="#1b3fb0" opacity="0.28"/>
+  </g>
+
+  <!-- the two-stage arrow -->
+  <g stroke="#2f6df6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M206 150h30"/>
+    <path d="M228 142l9 8-9 8"/>
+  </g>
+
+  <!-- view 1: the personalised rewrite, with its highlight -->
+  <g>
+    <rect x="256" y="46" width="176" height="86" rx="11" fill="#ffffff" fill-opacity="0.92" stroke="#1b3fb0" stroke-opacity="0.22"/>
+    <rect x="272" y="62" width="66" height="7" rx="3.5" fill="#2f6df6" opacity="0.75"/>
+    <rect x="272" y="80" width="142" height="6" rx="3" fill="#1b3fb0" opacity="0.26"/>
+    <rect x="272" y="96" width="144" height="18" rx="5" fill="#2f6df6" opacity="0.2"/>
+    <rect x="272" y="96" width="4" height="18" rx="2" fill="#2f6df6"/>
+    <rect x="272" y="122" width="118" height="6" rx="3" fill="#1b3fb0" opacity="0.26"/>
+  </g>
+
+  <!-- view 2: the slide -->
+  <g>
+    <rect x="446" y="42" width="146" height="86" rx="11" fill="#ffffff" fill-opacity="0.92" stroke="#1b3fb0" stroke-opacity="0.22"/>
+    <rect x="462" y="58" width="54" height="7" rx="3.5" fill="#ffb703"/>
+    <rect x="462" y="76" width="112" height="5" rx="2.5" fill="#1b3fb0" opacity="0.3"/>
+    <rect x="462" y="89" width="96" height="5" rx="2.5" fill="#1b3fb0" opacity="0.3"/>
+    <rect x="462" y="102" width="104" height="5" rx="2.5" fill="#1b3fb0" opacity="0.3"/>
+  </g>
+
+  <!-- view 3: the audio lesson, a teacher/student exchange -->
+  <g>
+    <rect x="256" y="148" width="176" height="76" rx="11" fill="#ffffff" fill-opacity="0.92" stroke="#1b3fb0" stroke-opacity="0.22"/>
+    <rect x="270" y="162" width="96" height="22" rx="9" fill="#2f6df6" opacity="0.22"/>
+    <rect x="336" y="190" width="82" height="22" rx="9" fill="#ffb703" opacity="0.32"/>
+    <circle cx="288" cy="173" r="4" fill="#2f6df6"/>
+    <circle cx="352" cy="201" r="4" fill="#c47f00"/>
+  </g>
+
+  <!-- view 4: the mind map -->
+  <g stroke="#1b3fb0" stroke-opacity="0.34" stroke-width="2" fill="none">
+    <path d="M478 172h28"/>
+    <path d="M506 172v28"/>
+    <path d="M506 186h24"/>
+    <path d="M506 200h24"/>
+  </g>
+  <rect x="446" y="152" width="48" height="22" rx="7" fill="#2f6df6" opacity="0.30"/>
+  <rect x="530" y="162" width="46" height="20" rx="6" fill="#1b3fb0" opacity="0.18"/>
+  <rect x="530" y="190" width="46" height="20" rx="6" fill="#1b3fb0" opacity="0.18"/>
+
+  <!-- assessment: the graded close of the loop -->
+  <g>
+    <rect x="256" y="240" width="336" height="26" rx="13" fill="#ffffff" fill-opacity="0.9" stroke="#1b3fb0" stroke-opacity="0.18"/>
+    <rect x="272" y="250" width="120" height="6" rx="3" fill="#1b3fb0" opacity="0.22"/>
+    <rect x="406" y="250" width="66" height="6" rx="3" fill="#1b3fb0" opacity="0.22"/>
+    <circle cx="562" cy="253" r="12" fill="#2e9e6b"/>
+    <path d="M556 253.2l4 4.2 8-8.4" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

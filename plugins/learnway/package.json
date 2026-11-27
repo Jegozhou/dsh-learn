@@ -1,0 +1,55 @@
+{
+  "name": "@local/dsh-learnway",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "description": "Learn Your Way for DeepSeek Harness: turn a textbook section into a personalised multi-view lesson — re-levelled text with interest-based rewrites highlighted, slides with narration, a teacher/student audio lesson, a mind map, immersive-text add-ons (timeline, memory aid, illustration) and formative assessment with Glows/Grows.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.15"
+  },
+  "dependencies": {
+    "pptxgenjs": "4.0.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "src",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\""
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "education",
+    "personalised-learning",
+    "textbook",
+    "learn-your-way"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

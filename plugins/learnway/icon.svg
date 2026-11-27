@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Learn Your Way">
+  <defs>
+    <linearGradient id="lw-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6df6"/>
+      <stop offset="1" stop-color="#1b3fb0"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#lw-bg)"/>
+  <!-- the open book: the source of truth -->
+  <path d="M13 20.5c3.6-1.7 7.2-1.7 10.8 0v23c-3.6-1.7-7.2-1.7-10.8 0z" fill="#ffffff" opacity="0.95"/>
+  <path d="M24.6 20.5c3.6-1.7 7.2-1.7 10.8 0v23c-3.6-1.7-7.2-1.7-10.8 0z" fill="#dbe6ff"/>
+  <path d="M13.6 24.4c3.2-1.4 6.4-1.4 9.6-.1M13.6 29c3.2-1.4 6.4-1.4 9.6-.1M13.6 33.6c3.2-1.4 6.4-1.4 9.6-.1" stroke="#2f6df6" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <!-- the multiple views fanning out of the book -->
+  <rect x="33" y="17" width="19" height="6.4" rx="3.2" fill="#ffd166"/>
+  <rect x="36" y="26" width="17" height="6.4" rx="3.2" fill="#ffb703"/>
+  <rect x="33.5" y="35" width="19" height="6.4" rx="3.2" fill="#fb8500" opacity="0.9"/>
+  <!-- assessment: a check that closes the loop -->
+  <circle cx="42" cy="51" r="6.2" fill="#ffffff"/>
+  <path d="M39.2 51.2l2 2.1 3.8-4.2" stroke="#1b3fb0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
